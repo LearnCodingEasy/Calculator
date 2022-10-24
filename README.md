@@ -1,12 +1,12 @@
 # Calculator
-Create Calculator Using HTML CSS JAVASCRIPT (Source Code)
+Create Awesome Calculator Using HTML CSS JAVASCRIPT (Source Code)
 
 
 
-# Title
 
-# Name
-Awesome 
+
+
+ 
 
 # Language
 1. Html
@@ -25,15 +25,13 @@ Awesome
 2.
 
 # Font
-[View]()
+[Cairo](https://fonts.google.com/specimen/Cairo?selection.family=Open+Sans&sidebar.open=true)
 
 # Icon
 * Box Icons
-[View](https://boxicons.com/)
+[Box Icons](https://boxicons.com/)
 
-# Plugins
-* Scroll Reveal
-[View](https://scrollrevealjs.org/guide/hello-world.html)
+
 
 
 ```
