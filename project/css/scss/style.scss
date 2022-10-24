@@ -1,5 +1,7 @@
+/* ? Font */
 @import url(https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900);
 
+/* Css Variable */
 :root {
   // --body-bg-color: #2a353c;
   // --container-bg-color: #27373b;
@@ -11,16 +13,19 @@
   --display-bg-color: #b6b6b6;
 }
 
+/* All * */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-weight: bold;
 }
+/* Html Font Name */
 html {
   // font-family: "Montserrat", sans-serif;
   font-family: "Cairo", sans-serif;
 }
+/* Wrapper Section */
 section {
   background-color: var(--body-bg-color);
   min-height: 100vh;
@@ -28,63 +33,68 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container {
-  width: 90%;
-  max-width: 400px;
-  background-color: var(--container-bg-color);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.display {
-  background-color: var(--display-bg-color);
-  height: 100px;
-  width: 100%;
-  text-align: right;
-  padding: 20px;
-  font-size: 30px;
-  position: relative;
-}
-.display-1 {
-  opacity: 0.4;
-  font-size: 20px;
-  height: 30px;
-  overflow: hidden;
-}
-.temp-result {
-  position: absolute;
-  bottom: 0;
-  left: 10;
-  font-size: 20px;
-  opacity: 0.3;
-}
-.all_button {
-  color: whitesmoke;
-  display: grid;
-  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-}
-.button {
-  border: 0.5px solid #5c5c5c23;
-  display: inline-block;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  cursor: pointer;
-  transition: all 0.2s linear;
-}
-.button:hover {
-  background-color: var(--container-hover-bg-color);
-  border-radius: 0.3rem;
-}
-.btn-0 {
-  grid-column: 1/3;
-}
-
-#items.ytd-grid-renderer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
-  grid-gap: 1% 1%;
+  /* Container  Calculator */
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--container-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Inner Calculator */
+    .calculator {
+      /* Element Display */
+      .display {
+        background-color: var(--display-bg-color);
+        height: 100px;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        font-size: 30px;
+        position: relative;
+        /* Element Display 1 */
+        .display-1 {
+          opacity: 0.4;
+          font-size: 20px;
+          height: 30px;
+          overflow: hidden;
+        }
+        /* Element Temp Result  */
+        .temp-result {
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          font-size: 20px;
+          opacity: 0.3;
+        }
+      }
+      /* Element All Button */
+      .all_button {
+        color: whitesmoke;
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+        /* All Single Button */
+        .button {
+          border: 0.5px solid #5c5c5c23;
+          display: inline-block;
+          height: 100px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          /* Event Hover On Single Button */
+          &:hover {
+            background-color: var(--container-hover-bg-color);
+            border-radius: 0.3rem;
+          }
+          /* Element Zero */
+          &.btn-0 {
+            grid-column: 1/3;
+          }
+        }
+      }
+    }
+  }
 }

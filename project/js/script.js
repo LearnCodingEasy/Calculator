@@ -11,24 +11,26 @@ let dis2Num = "";
 let result = null;
 let lastOperation = "";
 let haveDot = false;
-// =>
+// => Get All Numbers
 numbersEl.forEach((number) => {
   number.addEventListener("click", (e) => {
+    // => If Number Exist Is Dot || Toggle Variable haveDot True & False
     if (e.target.innerText === "." && !haveDot) {
-      console.log("e: ", e);
-      console.log("e.target: ", e.target);
-      console.log("e.target.innerText: ", e.target.innerText);
       haveDot = true;
     } else if (e.target.innerText === "." && haveDot) {
       return;
     }
+    // => Get All Number And Save It Inside Variable dis2Num
     dis2Num += e.target.innerText;
+    // => Update Value Variable display2El Make It Equal dis2Num
     display2El.innerText = dis2Num;
   });
 });
-// =>
+
+// => Get All Operation Element
 operationEl.forEach((operation) => {
   operation.addEventListener("click", (e) => {
+    // => If dis2Num == '' Stop
     if (!dis2Num) return;
     haveDot = false;
     const operationName = e.target.innerText;
@@ -42,6 +44,7 @@ operationEl.forEach((operation) => {
     console.log(result);
   });
 });
+
 // =>
 function clearVar(name = "") {
   dis1Num += dis2Num + " " + name + " ";

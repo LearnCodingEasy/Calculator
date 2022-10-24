@@ -61,7 +61,7 @@ gulp.task("scss", function () {
   return gulp
     .src("project/css/scss/**/*.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(autoprefixer("last 2 versions"))
     .pipe(concat("style.css"))
     .pipe(sourcemaps.write("."))
