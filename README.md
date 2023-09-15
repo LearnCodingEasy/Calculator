@@ -39,7 +39,7 @@ npm install
 ``` 
 
 # View
-[GitHub Pages](https://pages.github.com/)
+[GitHub Pages](https://learncodingeasy.github.io/Calculator/dist/)
 
 
 # Preview
